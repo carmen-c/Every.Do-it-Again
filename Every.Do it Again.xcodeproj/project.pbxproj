@@ -15,6 +15,7 @@
 		1F80D0301DE632B800D82CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F80D02E1DE632B800D82CFD /* Main.storyboard */; };
 		1F80D0321DE632B800D82CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F80D0311DE632B800D82CFD /* Assets.xcassets */; };
 		1F80D0351DE632B800D82CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F80D0331DE632B800D82CFD /* LaunchScreen.storyboard */; };
+		1F80D06D1DE64A8E00D82CFD /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F80D06C1DE64A8D00D82CFD /* AddItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		1F80D0311DE632B800D82CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F80D0341DE632B800D82CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F80D0361DE632B800D82CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F80D06B1DE64A8D00D82CFD /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		1F80D06C1DE64A8D00D82CFD /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +66,11 @@
 		1F80D01E1DE632B800D82CFD /* Every.Do it Again */ = {
 			isa = PBXGroup;
 			children = (
-				1F80D0221DE632B800D82CFD /* AppDelegate.h */,
-				1F80D0231DE632B800D82CFD /* AppDelegate.m */,
-				1F80D0281DE632B800D82CFD /* MasterViewController.h */,
-				1F80D0291DE632B800D82CFD /* MasterViewController.m */,
-				1F80D02B1DE632B800D82CFD /* DetailViewController.h */,
-				1F80D02C1DE632B800D82CFD /* DetailViewController.m */,
 				1F80D02E1DE632B800D82CFD /* Main.storyboard */,
-				1F80D0311DE632B800D82CFD /* Assets.xcassets */,
 				1F80D0331DE632B800D82CFD /* LaunchScreen.storyboard */,
-				1F80D0361DE632B800D82CFD /* Info.plist */,
 				1F80D0251DE632B800D82CFD /* Every_Do_it_Again.xcdatamodeld */,
+				1F80D0721DE6551000D82CFD /* Model */,
+				1F80D0711DE654F800D82CFD /* Controller */,
 				1F80D01F1DE632B800D82CFD /* Supporting Files */,
 			);
 			path = "Every.Do it Again";
@@ -82,9 +79,33 @@
 		1F80D01F1DE632B800D82CFD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F80D0361DE632B800D82CFD /* Info.plist */,
+				1F80D0311DE632B800D82CFD /* Assets.xcassets */,
 				1F80D0201DE632B800D82CFD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F80D0711DE654F800D82CFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F80D06B1DE64A8D00D82CFD /* AddItemViewController.h */,
+				1F80D06C1DE64A8D00D82CFD /* AddItemViewController.m */,
+				1F80D0281DE632B800D82CFD /* MasterViewController.h */,
+				1F80D0291DE632B800D82CFD /* MasterViewController.m */,
+				1F80D02B1DE632B800D82CFD /* DetailViewController.h */,
+				1F80D02C1DE632B800D82CFD /* DetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1F80D0721DE6551000D82CFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F80D0221DE632B800D82CFD /* AppDelegate.h */,
+				1F80D0231DE632B800D82CFD /* AppDelegate.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F80D02D1DE632B800D82CFD /* DetailViewController.m in Sources */,
+				1F80D06D1DE64A8E00D82CFD /* AddItemViewController.m in Sources */,
 				1F80D02A1DE632B800D82CFD /* MasterViewController.m in Sources */,
 				1F80D0241DE632B800D82CFD /* AppDelegate.m in Sources */,
 				1F80D0271DE632B800D82CFD /* Every_Do_it_Again.xcdatamodeld in Sources */,
@@ -317,6 +339,7 @@
 				1F80D03B1DE632B800D82CFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
